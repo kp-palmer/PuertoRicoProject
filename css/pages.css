@@ -1,0 +1,439 @@
+/* ---------------------------------------------------
+    MAIN STYLE
+    ----------------------------------------------------- */
+
+    @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #fafafa;
+    }
+
+    p {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1.7em;
+        color: #999;
+    }
+
+    a, a:hover, a:focus {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    i, span {
+        display: inline-block;
+    }
+
+    ul ul a {
+        font-size: 0.9em !important;
+        padding-left: 30px !important;
+        background: #a52020;
+    }
+
+    ul.CTAs {
+        padding: 20px;
+    }
+
+    ul.CTAs a {
+        text-align: center;
+        font-size: 0.9em !important;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+
+    a.download {
+        background: #fff;
+        color: #a52020;
+    }
+
+    a.article, a.article:hover {
+        background: #a52020 !important;
+        color: #fff !important;
+    }
+
+
+    .page-stuff {
+        padding: 2% 10%;
+        margin-left: 80px;
+        margin-top: 76px;
+        transition: all 0.3s;
+    }
+
+    .page-stuff.active {
+        margin-left: 0 !important;
+    }
+
+    /* ---------------------------------------------------
+    NAVBAR STYLE
+    ----------------------------------------------------- */
+
+    .navbar {
+        padding: 14px 10px;
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 0;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        position: fixed;  
+        width: 100%;  
+    }
+
+    .navbar-btn {
+        box-shadow: none;
+        outline: none !important;
+        border: none;
+        margin-left: 5%;
+    }
+
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+        color: #b22222
+    }
+
+    #title {
+        display: inline-block;
+        padding-left: 30px;
+        font-size: 3vh;
+        margin:11px 0;
+    }
+
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+    ----------------------------------------------------- */
+    .wrapper {
+        display: flex;
+        align-items: stretch;
+    }
+
+    #sidebar {
+        /*    min-width: 250px;
+        max-width: 250px;*/
+        background: #b22222;
+        color: #fff;
+        transition: all 0.3s;
+        position: fixed;
+        height: 100%;
+    }
+
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+
+    }
+
+    #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
+        display: none;
+    }
+
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        text-align: left;
+    }
+
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+        text-align: center;
+        font-size: 0.85em;
+    }
+
+    #sidebar.active ul li a i {
+        margin-right:  0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
+        top: auto;
+        bottom: 5px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px 0px;
+        background: #a52020;
+    }
+
+    #sidebar .sidebar-header strong {
+        display: none;
+        font-size: 1.8em;
+    }
+
+    #sidebar ul.components {
+        /*padding: 20px 0;*/
+        border-top: 1px solid hsla(0, 0%, 100%, 0.12);
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+    }
+
+    #sidebar ul li a:hover {
+        color: #a52020;
+        background: #fff;
+    }
+
+    #sidebar ul li a i {
+        margin-right: 10px;
+    }
+
+    #sidebar ul li.active > a, a[aria-expanded="true"] {
+        color: #fff;
+        background: #a52020;
+    }
+
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -81px !important ;
+        position: fixed;
+        height: 100%;
+    }
+
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+        top: auto;
+        bottom: 5px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    #sidebar .sidebar-header h3, #sidebar .CTAs {
+        display: none;
+    }
+
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right:  0;
+        display: block;
+    }
+
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    
+    #sidebar {
+        margin-left: 0;
+    }
+    
+    #sidebarCollapse span {
+        display: none;
+    }
+
+    */a[aria-expanded="true"]::before {
+        content: '\e260';
+    }
+
+    #sidebarCollapse {
+        background-color:#b22222;
+        border-color: #b22222;
+    }
+
+/* ---------------------------------------------------
+    DONATE STYLE
+    ----------------------------------------------------- */
+    .line {
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dashed #ddd;
+        margin: 40px 0;
+    }
+
+    .link {
+        color: #b22222;
+    }
+
+    .link:hover {
+        color: #ca2727;
+    }
+
+/* ---------------------------------------------------
+    STATS STYLE
+    ----------------------------------------------------- */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Lato', sans-serif;
+      font-size: 3em;
+      text-align: center;
+  }
+
+  .parallax {
+      /* The image used */
+      background-image: url("https://static.pexels.com/photos/24126/pexels-photo.jpg");
+      /* Set a specific height */
+      min-height: 500px; 
+      min-width: 100%;
+      /*transform: skewY(-4deg);*/
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+  }
+
+  #par1 {
+      /* The image used */
+      /*background-image: url("https://www.greenleft.org.au/sites/default/files/styles/glw_large_image/public/widerimages/p14%20puerto-rico-hurricane-maria%202017.jpg?itok=VsCboVuG");*/
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/30/Maria_2017-09-24_1754Z.jpg');
+  } 
+
+  #par2 {
+      /* The image used */
+      background-image: url("https://multimidia.boavontade.com/sites/default/files/styles/grande/public/1235_0.jpg?itok=RrePtTlp");
+  } 
+
+  #par3 {
+      /* The image used */
+      background-image: url("https://www.prensa.com/mundo/Cojimar-Habana-Irma-territorio-Cuba_LPRIMA20170911_0013_34.jpg");
+  }
+    
+  #par4 {
+    background-image: url('https://carolinaconnection.org/wp-content/uploads/2017/09/3803159.jpg')
+    /*background-image: url("../images/parImg/water.jpg");*/
+  }
+
+  #introname {
+      /*font-size: 4vw;*/
+      color:black;
+      padding-top: 50px; 
+  }
+
+  .stats {
+      /*font-size: 3vh;*/
+      color: #b22222;
+      padding: 30px 50px;
+      /*height:100;*/
+      width:100%;
+      background-color:white;
+      text-align: center;
+      height: 300px;
+  }
+
+  #statsPage {
+    padding: 0;
+  }
+
+  .stats h2 {
+    font-size: 3vh;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+  }
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+    ----------------------------------------------------- */
+    @media (max-width: 768px) {
+        #sidebar {
+            min-width: 80px;
+            max-width: 80px;
+            text-align: center;
+            margin-left: -81px !important ;
+            position: fixed;
+            height: 100%;
+        }
+        a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+            top: auto;
+            bottom: 5px;
+            right: 50%;
+            -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+            transform: translateX(50%);
+        }
+        #sidebar.active {
+            margin-left: 0 !important;
+        }
+
+        #sidebar .sidebar-header h3, #sidebar .CTAs {
+            display: none;
+        }
+
+        #sidebar .sidebar-header strong {
+            display: block;
+        }
+
+        #sidebar ul li a {
+            padding: 20px 10px;
+        }
+
+        #sidebar ul li a span {
+            font-size: 0.85em;
+        }
+        #sidebar ul li a i {
+            margin-right:  0;
+            display: block;
+        }
+
+        #sidebar ul ul a {
+            padding: 10px !important;
+        }
+
+        #sidebar ul li a i {
+            font-size: 1.3em;
+        }
+        #sidebar {
+            margin-left: 0;
+        }
+        #sidebarCollapse span {
+            display: none;
+        }
+        #title {
+            display: inline-block;
+            padding-left: 30px;
+            font-size: 3vh;
+            margin:0 11px;
+            float: left;
+        }
+    }
+
+
+
+    /* ----------------------*/
+
+
+    .section {
+        width: 100%;
+        height: 500px;
+    }
