@@ -277,7 +277,6 @@ h2 {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-}
 
 .total {
   margin-top: 10%;
@@ -371,9 +370,32 @@ a.brand-logo:focus, .mobile-demo {
   padding: 2%;
 }
 
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
+  .sticky-sidebar {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+  }
+
+  .sticky-sidebar h1, h2 {
+    padding: 0.5em, 10%;
+  }
+
+  #content {
+    display:none;
+  }
+
+  #buttons a {
+    line-height: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #donate {
-      display: none;
+    display: none;
   }
 
   #resources {
@@ -381,10 +403,3 @@ a.brand-logo:focus, .mobile-demo {
     padding: 10%;
   }
 }
-
-
-/*#content:after,#content:before{
-  content:"";
-  display:table;
-  clear:both;
-  }*/

@@ -315,23 +315,22 @@
 
   #par1 {
       /* The image used */
-      /*background-image: url("https://www.greenleft.org.au/sites/default/files/styles/glw_large_image/public/widerimages/p14%20puerto-rico-hurricane-maria%202017.jpg?itok=VsCboVuG");*/
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/30/Maria_2017-09-24_1754Z.jpg');
+    background-image: url('../images/parImg/hurricane-lg');
   } 
 
   #par2 {
       /* The image used */
-      background-image: url("https://multimidia.boavontade.com/sites/default/files/styles/grande/public/1235_0.jpg?itok=RrePtTlp");
+      background-image: url("../images/parImg/dest-lg");
   } 
 
   #par3 {
       /* The image used */
-      background-image: url("https://www.prensa.com/mundo/Cojimar-Habana-Irma-territorio-Cuba_LPRIMA20170911_0013_34.jpg");
+      background-image: url("../images/parImg/people-lg");
   }
     
   #par4 {
-    background-image: url('https://carolinaconnection.org/wp-content/uploads/2017/09/3803159.jpg')
-    /*background-image: url("../images/parImg/water.jpg");*/
+    /*background-image: url('https://carolinaconnection.org/wp-content/uploads/2017/09/3803159.jpg')*/
+    background-image: url("../images/parImg/water.jpg");
   }
 
   #introname {
@@ -349,6 +348,7 @@
       background-color:white;
       text-align: center;
       height: 300px;
+      font-family: 'Raleway', sans-serif;
   }
 
   #statsPage {
@@ -356,9 +356,14 @@
   }
 
   .stats h2 {
-    font-size: 3vh;
+    font-size: 3.5vh;
     color: black;
     font-family: 'Raleway', sans-serif;
+    margin: 5% 0;
+  }
+
+  #shared {
+    margin: 2% 0 6%;
   }
 
 
@@ -426,6 +431,18 @@
             margin:0 11px;
             float: left;
         }
+        .stats {
+            padding: 7% 6%;
+        }
+
+        .parallax {
+            min-height: 300px;
+        }
+
+        #shared {
+            font-size: 3vh;
+        }
+
     }
 
 
