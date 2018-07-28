@@ -204,7 +204,7 @@
         min-width: 80px;
         max-width: 80px;
         text-align: center;
-        margin-left: -81px !important ;
+        margin-left: -91px !important ;
         position: fixed;
         height: 100%;
     }
@@ -315,62 +315,63 @@
 
   #par1 {
       /* The image used */
-    background-image: url('../images/parImg/hurricane-lg');
+      background-image: url('../../images/parImg/hurricane-lg.jpg');
   } 
 
   #par2 {
       /* The image used */
-      background-image: url("../images/parImg/dest-lg");
+      background-image: url("../../images/parImg/dest-lg.jpg");
   } 
 
   #par3 {
       /* The image used */
-      background-image: url("../images/parImg/people-lg");
+      background-image: url("../../images/parImg/people-lg.jpg");
   }
-    
+
   #par4 {
     /*background-image: url('https://carolinaconnection.org/wp-content/uploads/2017/09/3803159.jpg')*/
-    background-image: url("../images/parImg/water.jpg");
-  }
+    background-image: url("../../images/parImg/water-lg.jpg");
+}
 
-  #introname {
-      /*font-size: 4vw;*/
-      color:black;
-      padding-top: 50px; 
-  }
+#introname {
+  /*font-size: 4vw;*/
+  color:black;
+  padding-top: 50px; 
+}
 
-  .stats {
-      /*font-size: 3vh;*/
-      color: #b22222;
-      padding: 30px 50px;
-      /*height:100;*/
-      width:100%;
-      background-color:white;
-      text-align: center;
-      height: 300px;
-      font-family: 'Raleway', sans-serif;
-  }
+.stats {
+  /*font-size: 3vh;*/
+  color: #b22222;
+  padding: 30px 50px;
+  /*height:100;*/
+  width:100%;
+  background-color:white;
+  text-align: center;
+  height: 300px;
+  font-family: 'Raleway', sans-serif;
+}
 
-  #statsPage {
+#statsPage {
     padding: 0;
-  }
+}
 
-  .stats h2 {
+.stats h2 {
     font-size: 3.5vh;
     color: black;
     font-family: 'Raleway', sans-serif;
     margin: 5% 0;
-  }
+    
+}
 
-  #shared {
+#shared {
     margin: 2% 0 6%;
-  }
+}
 
 
 /* ---------------------------------------------------
     MEDIAQUERIES
     ----------------------------------------------------- */
-    @media (max-width: 768px) {
+    @media and screen (max-width: 768px) {
         #sidebar {
             min-width: 80px;
             max-width: 80px;
@@ -433,24 +434,76 @@
         }
         .stats {
             padding: 7% 6%;
+            font-size: 3vh;
         }
 
         .parallax {
             min-height: 300px;
         }
 
-        #shared {
-            font-size: 3vh;
+        #par1 {
+            /* The image used */
+            background-image: url('../../images/parImg/hurricane-sm.jpg');
+            height: auto;
+        } 
+
+        #par2 {
+            /* The image used */
+            background-image: url("../../images/parImg/dest-sm.jpg");
+        } 
+
+        #par3 {
+            /* The image used */
+            background-image: url("../../images/parImg/people-sm.jpg");
         }
 
+        #par4 {
+            /*background-image: url('https://carolinaconnection.org/wp-content/uploads/2017/09/3803159.jpg')*/
+            background-image: url("../../images/parImg/water-sm.jpg");
+        }
+
+        #shared {
+            font-size: 2.75vh;
+        }
+
+        .stats {
+          padding: 70px 50px;
+        }
+    }
+
+    @media screen (max-height: 768px) and (orientation:landscape){
+        .stats h2 {
+            font-size: 5vh;
+        }
+    }
+
+    @media screen and (max-width: 1024px) and (orientation:portrait){
+        body {
+            font-size: 20px;
+        }
+
+        .stats h2 {
+            font-size: 2.5vh;
+        }
+
+        .stats {
+            height: 400px;
+            padding: 70px 50px;
+        }
+
+        #title {
+            font-size: 2.25vh;
+        }
+
+        #sourcebar {
+            display: none;
+        }
     }
 
 
+/* ----------------------*/
 
-    /* ----------------------*/
-
-
-    .section {
-        width: 100%;
-        height: 500px;
-    }
+.section {
+    width: 100%;
+    height: 500px;
+}

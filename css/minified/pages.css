@@ -18,7 +18,7 @@ a{padding:10px
 strong{display:none;font-size:1.8em}#sidebar
 ul.components{border-top:1px solid hsla(0, 0%, 100%, 0.12)}#sidebar ul li
 a{padding:10px;font-size:1.1em;display:block}#sidebar ul li a:hover{color:#a52020;background:#fff}#sidebar ul li a
-i{margin-right:10px}#sidebar ul li.active>a,a[aria-expanded="true"]{color:#fff;background:#a52020}#sidebar{min-width:80px;max-width:80px;text-align:center;margin-left:-81px !important;position:fixed;height:100%}a[aria-expanded="false"]::before,a[aria-expanded="true"]::before{top:auto;bottom:5px;right:50%;-webkit-transform:translateX(50%);-ms-transform:translateX(50%);transform:translateX(50%)}#sidebar.active{margin-left:0 !important}#sidebar .sidebar-header h3, #sidebar
+i{margin-right:10px}#sidebar ul li.active>a,a[aria-expanded="true"]{color:#fff;background:#a52020}#sidebar{min-width:80px;max-width:80px;text-align:center;margin-left:-91px !important;position:fixed;height:100%}a[aria-expanded="false"]::before,a[aria-expanded="true"]::before{top:auto;bottom:5px;right:50%;-webkit-transform:translateX(50%);-ms-transform:translateX(50%);transform:translateX(50%)}#sidebar.active{margin-left:0 !important}#sidebar .sidebar-header h3, #sidebar
 .CTAs{display:none}#sidebar .sidebar-header
 strong{display:block}#sidebar ul li
 a{padding:20px
@@ -29,9 +29,9 @@ a{padding:10px
 !important}#sidebar ul li a
 i{font-size:1.3em}#sidebar{margin-left:0}#sidebarCollapse
 span{display:none}*/a[aria-expanded="true"]::before{content:'\e260'}#sidebarCollapse{background-color:#b22222;border-color:#b22222}.line{width:100%;height:1px;border-bottom:1px dashed #ddd;margin:40px
-0}.link{color:#b22222}.link:hover{color:#ca2727}.centered{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Lato',sans-serif;font-size:3em;text-align:center}.parallax{background-image:url("https://static.pexels.com/photos/24126/pexels-photo.jpg");min-height:500px;min-width:100%;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}#par1{background-image:url('https://upload.wikimedia.org/wikipedia/commons/3/30/Maria_2017-09-24_1754Z.jpg')}#par2{background-image:url("https://multimidia.boavontade.com/sites/default/files/styles/grande/public/1235_0.jpg?itok=RrePtTlp")}#par3{background-image:url("https://www.prensa.com/mundo/Cojimar-Habana-Irma-territorio-Cuba_LPRIMA20170911_0013_34.jpg")}#par4{background-image:url('https://carolinaconnection.org/wp-content/uploads/2017/09/3803159.jpg')}#introname{color:black;padding-top:50px}.stats{color:#b22222;padding:30px
+0}.link{color:#b22222}.link:hover{color:#ca2727}.centered{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Lato',sans-serif;font-size:3em;text-align:center}.parallax{background-image:url("https://static.pexels.com/photos/24126/pexels-photo.jpg");min-height:500px;min-width:100%;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}#par1{background-image:url('../../images/parImg/hurricane-lg.jpg')}#par2{background-image:url("../../images/parImg/dest-lg.jpg")}#par3{background-image:url("../../images/parImg/people-lg.jpg")}#par4{background-image:url("../../images/parImg/water-lg.jpg")}#introname{color:black;padding-top:50px}.stats{color:#b22222;padding:30px
 50px;width:100%;background-color:white;text-align:center;height:300px;font-family:'Raleway',sans-serif}#statsPage{padding:0}.stats
-h2{font-size:3.5vh;color:black;font-family:'Raleway',sans-serif;margin:5% 0}#shared{margin:2% 0 6%}@media (max-width: 768px){#sidebar{min-width:80px;max-width:80px;text-align:center;margin-left:-81px !important;position:fixed;height:100%}a[aria-expanded="false"]::before,a[aria-expanded="true"]::before{top:auto;bottom:5px;right:50%;-webkit-transform:translateX(50%);-ms-transform:translateX(50%);transform:translateX(50%)}#sidebar.active{margin-left:0 !important}#sidebar .sidebar-header h3, #sidebar
+h2{font-size:3.5vh;color:black;font-family:'Raleway',sans-serif;margin:5% 0}#shared{margin:2% 0 6%}@media and screen (max-width: 768px){#sidebar{min-width:80px;max-width:80px;text-align:center;margin-left:-81px !important;position:fixed;height:100%}a[aria-expanded="false"]::before,a[aria-expanded="true"]::before{top:auto;bottom:5px;right:50%;-webkit-transform:translateX(50%);-ms-transform:translateX(50%);transform:translateX(50%)}#sidebar.active{margin-left:0 !important}#sidebar .sidebar-header h3, #sidebar
 .CTAs{display:none}#sidebar .sidebar-header
 strong{display:block}#sidebar ul li
 a{padding:20px
@@ -42,4 +42,7 @@ a{padding:10px
 !important}#sidebar ul li a
 i{font-size:1.3em}#sidebar{margin-left:0}#sidebarCollapse
 span{display:none}#title{display:inline-block;padding-left:30px;font-size:3vh;margin:0
-11px;float:left}.stats{padding:7% 6%}.parallax{min-height:300px}#shared{font-size:3vh}}.section{width:100%;height:500px}
+11px;float:left}.stats{padding:7% 6%;font-size:3vh}.parallax{min-height:300px}#par1{background-image:url('../../images/parImg/hurricane-sm.jpg');height:auto}#par2{background-image:url("../../images/parImg/dest-sm.jpg")}#par3{background-image:url("../../images/parImg/people-sm.jpg")}#par4{background-image:url("../../images/parImg/water-sm.jpg")}#shared{font-size:2.75vh}.stats{padding:70px
+50px}}@media screen and (max-width: 1024px) and (orientation:portrait){body{font-size:20px}.stats
+h2{font-size:2.5vh}.stats{height:400px;padding:70px
+50px}#title{font-size:2.25vh}#sourcebar{display:none}}.section{width:100%;height:500px}
